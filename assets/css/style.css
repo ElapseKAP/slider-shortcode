@@ -1,0 +1,136 @@
+:root {
+	--slider-shortcode-section-bg: #fdedf2;
+	--slider-shortcode-white-bg: #ffffff;
+	--slider-shortcode-font-col: #000000;
+	--slider-shortcode-line-col: #6c6c6c;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+.products-slider-section {
+	background-color: var(--slider-shortcode-section-bg);
+	color: var(--slider-shortcode-font-col);
+	padding: 21px 0;
+}
+
+.products-slider-section h2 {
+	direction: rtl;
+	font-family: 'Almoni';
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 40px;
+	margin: 0;
+	text-align: center;
+}
+
+.products-slider-section .container {
+	font-family: 'Arial', sans-serif;
+	padding: 0 15px;
+}
+
+.products-list {
+	margin: 31px -15px 0;
+}
+
+.slick-prev::before,
+.slick-next::before {
+	color: var(--slider-shortcode-font-col);
+	font-size: 38px;
+}
+
+.slick-prev {
+	left: -5.31%;
+}
+
+.slick-next {
+	right: -5.31%;
+}
+
+.products-list .slick-slide {
+	padding: 0 21px;
+}
+
+.products-list .product-img {
+	background-color: var(--slider-shortcode-white-bg);
+}
+
+.products-list .product-img a {
+	display: block;
+}
+
+.products-list .product-card img {
+	object-fit: contain;
+	width: 100%;
+}
+
+.products-list h4,
+.products-list .product-price {
+	margin: 0;
+	text-align: center;
+}
+
+.products-list .title {
+	border-top: 0.5px solid var(--slider-shortcode-line-col);
+	margin-top: 10px;
+	padding: 10px 0;
+}
+
+.products-list .title a {
+	color: var(--slider-shortcode-font-col);
+	font-size: 16px;
+	line-height: 18.4px;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.products-list .product-price {
+	margin-top: 18px;
+}
+
+.products-list .product-price bdi {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 20.7px;
+}
+
+@media screen and (min-width: 768px) {
+	.products-slider-section .container {
+		margin: 0 auto;
+		width: 77%;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.products-slider-section h2 {
+		font-size: 40px;
+		line-height: 40.47px;
+		text-align: right;
+	}
+
+	.products-list {
+		margin-top: 23px;
+	}
+
+	.products-list .title {
+		margin-top: 20px;
+		padding: 20px 0;
+	}
+
+	.products-list .title a {
+		font-size: 20px;
+		line-height: 23px;
+	}
+
+	.products-list .product-price {
+		margin-top: 17px;
+	}
+
+	.products-list .product-price bdi {
+		font-size: 24px;
+		line-height: 27.6px;
+	}
+}
+
