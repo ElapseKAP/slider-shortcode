@@ -31,7 +31,7 @@ body {
 }
 
 .products-list {
-	margin: 31px -15px 0;
+	margin: 31px 0 0;
 }
 
 .slick-prev::before,
@@ -49,7 +49,7 @@ body {
 }
 
 .products-list .slick-slide {
-	padding: 0 21px;
+	padding: 0 6px;
 }
 
 .products-list .product-img {
@@ -98,8 +98,13 @@ body {
 
 @media screen and (min-width: 768px) {
 	.products-slider-section .container {
+		padding: 0;
 		margin: 0 auto;
 		width: 77%;
+	}
+
+	.products-list .slick-slide {
+		padding: 0 21px;
 	}
 }
 
@@ -133,4 +138,3 @@ body {
 		line-height: 27.6px;
 	}
 }
-
