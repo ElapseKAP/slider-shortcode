@@ -14,7 +14,7 @@ function slider_shortcode_products_slider_shortcode( $attr = array() ) {
 	}
 
 	$args = array(
-		'post_type'      => 'product',
+		'post_type'      => array('product', 'product_variation'),
 		'post_status'    => 'publish',
 		'posts_per_page' => -1,
 		'orderby'        => 'DESC',
@@ -23,7 +23,7 @@ function slider_shortcode_products_slider_shortcode( $attr = array() ) {
 			array(
 				'taxonomy' => 'product_type',
 				'field'    => 'slug',
-				'terms'    => array( 'grouped' ),
+				'terms'    => array( 'grouped', 'variable' ),
 				'operator' => 'NOT IN'
 			)
 		)
